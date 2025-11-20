@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>HOTEL Management</title>
+    <style>
+        .button {
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 16px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        .button1 {
+            background-color: white;
+            color: black;
+            border: 2px solid #4CA;
+        }
+
+        .button1:hover {
+            background-color: #4CA;
+            color: white;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/logo.png" type="image/png">
+
+</head>
+
+<body>
+
+    <!-- header -->
+
+    <header class="header" id="header">
+        <div class="head-top">
+            <div class="site-name">
+                <span>GEEKPROBIN</span>
+            </div>
+            <div class="site-nav">
+                <span id="nav-btn">MENU<i class="fas fa-bars"></i></span>
+            </div>
+        </div>
+
+        <div class="head-bottom flex">
+            <h2>NICE AND COMFORTABLE PLACE TO STAY</h2>
+            <p>Chilling out on the bed in your hotel room watching television,while wearing your own pajamas,is
+                sometimes the best part of a vacation.All good hotels tend to lead people to do things they would not
+                necessarily do at home. </p>
+            <a href="#book" class="button button1">BOOK NOW</a>
+            <button type="button" class="head-btn">GET STARTED</button>
+        </div>
+    </header>
+    <!-- end of header -->
+
+    <!-- side navbar -->
+    <div class="sidenav" id="sidenav">
+        <span class="cancel-btn" id="cancel-btn">
+            <i class="fas fa-times"></i>
+        </span>
+
+        <ul class="navbar">
+            <li><a href="#header">home</a></li>
+            <li><a href="#services">services</a></li>
+            <li><a href="#book">Book Now</a></li>
+            <li><a href="#rooms">rooms</a></li>
+            <li><a href="#customers">customers</a></li>
+            <li><a href="feedback.html">feedback</a></li>
+
+
+        </ul>
+        <button class="btn sign-up">sign up</button>
+        <button class="btn log-in">log in</button>
+    </div>
+    <!-- end of side navbar -->
+
+    <!-- fullscreen modal -->
+    <div id="modal"></div>
+    <!-- end of fullscreen modal -->
+
+    <!-- body content  -->
+    <section class="services sec-width" id="services">
+
+        <div class="title">
+            <h1>services</h1>
+        </div>
+
+        <section class="room wrapper2 top" id="room">
+            <div class="container">
+                <center>
+                    <div class="heading">
+                        <h2>Services</h2>
+                        <h2>Fascinating rooms & suites </h2>
+                    </div>
+                    <div class="content">
+                        <div class="left">
+                            <div class="box">
+                                <i class="fas fa-desktop"></i>
+                                <p>Free Cost</p>
+                                <h3>No booking fee</h3>
+                            </div>
+                            <div class="box">
+                                <i class="fas fa-dollar-sign"></i>
+                                <p>Free Cost</p>
+                                <h3>Best rate guarantee</h3>
+                            </div>
+                            <div class="box">
+                                <i class="fab fa-resolving"></i>
+                                <p>Free Cost</p>
+                                <h3>Reservations 24/7</h3>
+                            </div>
+                            <div class="box">
+                                <i class="fal fa-alarm-clock"></i>
+                                <p>Free Cost</p>
+                                <h3>High-speed Wi-Fi</h3>
+                            </div>
+                            <div class="box">
+                                <i class="fas fa-mug-hot"></i>
+                                <p>Free Cost</p>
+                                <h3>Free breakfast</h3>
+                            </div>
+                            <div class="box">
+                                <i class="fas fa-user-tie"></i>
+                                <p>Free Cost</p>
+                                <h3>One person free</h3>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <img src="https://thumbs.dreamstime.com/b/hotel-room-beautiful-orange-sofa-included-43642330.jpg"
+                                alt="">
+                        </div>
+                    </div>
+
+            </div>
+            </center>
+        </section>
+        <div class="services-container">
+            <!-- single service -->
+            <article class="service">
+                <div class="service-icon">
+                    <span>
+                        <i class="fas fa-utensils"></i>
+                    </span>
+                </div>
+                <div class="service-content">
+                    <h2>Food Service/ Food Runner</h2>
+                    <p>Our hotel provide best food service.They can be Restaurant Lounge coffee Shop Room service Bar
+                        Outside Catering Service
+                    </p>
+                    <button type="button" class="btn">Know More</button>
+                </div>
+            </article>
+            <!-- end of single service -->
+            <!-- single service -->
+            <article class="service">
+                <div class="service-icon">
+                    <span>
+                        <i class="fas fa-swimming-pool"></i>
+                    </span>
+                </div>
+                <div class="service-content">
+                    <h2>Refreshment</h2>
+                    <p>The expected welcome refreshment is a bottle of wine, a small cheese tray, a fruit place,
+                        crackers, cookies or any combination of the five. Nowadays, though, you must look beyond the
+                        perfunctory and truly own this aspect of the guest experience if you are to make a lasting
+                        impression.</p>
+                    <button type="button" class="btn">Know More</button>
+                </div>
+            </article>
+            <!-- end of single service -->
+            <!-- single service -->
+            <article class="service">
+                <div class="service-icon">
+                    <span>
+                        <i class="fas fa-broom"></i>
+                    </span>
+                </div>
+                <div class="service-content">
+                    <h2>Housekeeping</h2>
+                    <p>Housekeeping department in hotel ensures the cleanliness, maintenance, and aesthetic appeal of
+                        all rooms and public areas. The housekeeping department not only turnarounds (prepares and clean
+                        guestrooms) on a timely manner it also cleans and maintains everything in the hotel so that the
+                        property is as fresh and attractive similar to the day when it opened the doors for the
+                        business.</p>
+                    <button type="button" class="btn">Know More</button>
+                </div>
+            </article>
+            <!-- end of single service -->
+            <!-- single service -->
+            <article class="service">
+                <div class="service-icon">
+                    <span>
+                        <i class="fas fa-door-closed"></i>
+                    </span>
+                </div>
+                <div class="service-content">
+                    <h2>Room Security</h2>
+                    <p>The security measures developed and implemented in the hotel are aimed at performing the
+                        following tasks:
+
+                        ensuring guest safety, protection and personal property during their stay in the hotel;
+                        protection of hotel property from hostile actions (theft, acts of vandalism, etc.);
+                        maintaining public order and ensuring proper behavior in all public places of the hotel;
+                        providing hotel guests with peace and privacy during their stay at the hotel;</p>
+                    <button type="button" class="btn">Know More</button>
+                </div>
+            </article>
+            <!-- end of single service -->
+        </div>
+    </section>
+
+
+    <div class="book sec-width" id="book">
+        <h2>Book Now</h2>
+        <form class="book-form">
+            <div class="form-item">
+                <label for="checkin-date">Check In Date: </label>
+                <input type="date" id="chekin-date">
+            </div>
+            <div class="form-item">
+                <label for="checkout-date">Check Out Date: </label>
+                <input type="date" id="chekout-date">
+            </div>
+            <div class="form-item">
+                <label for="adult">Adults: </label>
+                <input type="number" min="1" value="1" id="adult">
+            </div>
+            <div class="form-item">
+                <label for="children">Children: </label>
+                <input type="number" min="1" value="1" id="children">
+            </div>
+            <div class="form-item">
+                <label for="rooms">Rooms: </label>
+                <input type="number" min="1" value="1" id="rooms">
+            </div>
+            <a href="payment.html" class="button button1">Payment Form</a>
+
+            <div class="form-item">
+                <input type="submit" class="btn" value="Book Now">
+            </div>
+
+        </form>
+    </div>
+
+    <section class="rooms sec-width" id="rooms">
+        <div class="title">
+            <h1>Rooms</h1>
+        </div>
+        <div class="rooms-container">
+            <!-- single room -->
+            <article class="room">
+                <div class="room-image">
+                    <img src="images/img1.jpg" alt="room image">
+                </div>
+                <div class="room-text">
+                    <h3>Luxury Rooms</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Presidential Suites
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Suites
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Deluxe Rooms
+                        </li>
+                    </ul>
+                    <p>Resorts are expected to have hotel rooms that make their guest feel like they are at home. The
+                        Great Wolf Lodge goes “above and beyond” expectations in this area. The on-site hotel has 605
+                        guest rooms. Each room comes with free WiFi, a private bathroom, mini refrigerator, a
+                        flat-screen television, a semi-private living area and a full size sleeper sofa Wolf
+                        Lodge. Every room at this resort is a suite. A standard suite, with two queen size beds will
+                        sleep up to six people. This is because of the sleeper sofa that is included in every room. Not
+                        bad for a standard suite. If a standard suite is not big enough for you; no problem. The resort
+                        has four different kinds of “Theme Suites” that will sleep up to seven people.</p>
+
+                    <p class="rate">
+                        <span>Rs 4000.00 /</span> 
+                    </p>
+                    <button type="button" class="btn">book now</button>
+                </div>
+            </article>
+            <!-- end of single room -->
+            <!-- single room -->
+            <article class="room">
+                <div class="room-image">
+                    <img src="images/img2.jpg" alt="room image">
+                </div>
+                <div class="room-text">
+                    <h3>Luxury Rooms</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Deluxe Rooms
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Presidential Suites
+
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Suites
+                        </li>
+                    </ul>
+                    <p>Furnished with one a king Sweet Dreams bed with oversized hypoallergenic pillows and a sleeper
+                        sofa, lounge in our spacious, deluxe guest room. Enjoy courtesy high-speed Internet access, a
+                        36-inch HDTV, coffeemaker, roomy work desk and ergonomic chair. Lounge in the plush armchair or
+                        paper yourself with premium bath products and combed cotton terry towels.
+                    </p>
+                    <p>Each room includes courtesy high-speed Internet access, a 36-inch HDTV, coffeemaker, roomy work
+                        desk and ergonomic chair. Lounge in the plush armchair or paper yourself with premium bath
+                        products and combed cotton terry towels.
+                    </p>
+                    <p class="rate">
+                        <span>Rs 2500.00 /</span> 
+                    </p>
+                    <button type="button" class="btn">book now</button>
+                </div>
+            </article>
+            <!-- end of single room -->
+            <!-- single room -->
+            <article class="room">
+                <div class="room-image">
+                    <img src="images/img3.jpg" alt="room image">
+                </div>
+                <div class="room-text">
+                    <h3>Luxury Rooms</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Suites
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Deluxe Rooms
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Presidential Suites
+                        </li>
+                    </ul>
+                    <p>Each room includes courtesy high-speed Internet access, a 36-inch HDTV, coffeemaker, roomy work
+                        desk and ergonomic chair. Lounge in the plush armchair or paper yourself with premium bath
+                        products and combed cotton terry towels.
+                    </p>
+                    <p> Enjoy courtesy high-speed Internet access, a 36-inch HDTV, coffeemaker, roomy work desk and
+                        ergonomic chair. Lounge in the plush armchair or paper yourself with premium bath products and
+                        combed cotton terry towels.
+                    </p>
+                    <p class="rate">
+                        <span>Rs 3500.00 /</span> 
+                    </p>
+                    <button type="button" class="btn">book now</button>
+                </div>
+            </article>
+            <!-- end of single room -->
+        </div>
+    </section>
+
+
+    <section class="customers" id="customers">
+        <div class="sec-width">
+            <div class="title">
+                <h1>customers</h1>
+            </div>
+            <div class="customers-container">
+                <!-- single customer -->
+                <div class="customer">
+                    <div class="rating">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="far fa-star"></i></span>
+                    </div>
+                    <h3>We Loved it</h3>
+                    <p>Nice hotel with great amenites.Enjoyed my stay.Overall a great experience.I'd like to visit
+                        again.</p>
+                    <img src="images/cus1.jpg" alt="customer image">
+                    <span>Customer Name, Country</span>
+                </div>
+                <!-- end of single customer -->
+                <!-- single customer -->
+                <div class="customer">
+                    <div class="rating">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="far fa-star"></i></span>
+                    </div>
+                    <h3>Comfortable Living</h3>
+                    <p>The rooms were clean and very comfertable and the staff was amazing.A good place to stay.Had a 2
+                        day stay in the hotel and it was a nice exeprience.</p>
+                    <img src="images/cus2.jpg" alt="customer image">
+                    <span>Customer Name, Country</span>
+                </div>
+                <!-- end of single customer -->
+                <!-- single customer -->
+                <div class="customer">
+                    <div class="rating">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="far fa-star"></i></span>
+                    </div>
+                    <h3>Nice Place</h3>
+                    <p>Hotel has nice amenities and clean rooms.Good rooms and great hospitality!</p>
+                    <img src="images/cus3.jpg" alt="customer image">
+                    <span>Customer Name, Country</span>
+                </div>
+                <!-- end of single customer -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div>
+                <h2>About Us </h2>
+                <p>They include common hotel room items such as TVs, sound systems, refrigerators, mini-bars, free
+                    Wi-Fi, coffee-makers, hairdryers and more. Amenities often include personal items like the
+                    toiletries the hotel provides. They can also include things that make a room more comfortable, such
+                    as air-conditioning. </p>
+                <ul class="social-icons">
+                    <li class="flex">
+                        <i class="fa fa-twitter fa-2x"></i>
+                    </li>
+                    <li class="flex">
+                        <i class="fa fa-facebook fa-2x"></i>
+                    </li>
+                    <li class="flex">
+                        <i class="fa fa-instagram fa-2x"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Useful Links</h2>
+                <a href="#">Blog</a>
+                <a href="#">Rooms</a>
+                <a href="#">Subscription</a>
+                <a href="#">Gift Card</a>
+            </div>
+
+            <div>
+                <h2>Privacy</h2>
+                <a href="#">Career</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Services</a>
+
+            </div>
+
+            <div>
+                <h2>Have A Question</h2>
+                <div class="contact-item">
+                    <span>
+                        <i class="fas fa-map-marker-alt"></i>
+                    </span>
+                    <span>
+                        203 Fake St.Mountain View, San Francisco, California, USA
+                    </span>
+                </div>
+                <div class="contact-item">
+                    <span>
+                        <i class="fas fa-phone-alt"></i>
+                    </span>
+                    <span>
+                        +84545 37534 48
+                    </span>
+                </div>
+                <div class="contact-item">
+                    <span>
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                    <span>
+                        info@domain.com
+                    </span>
+                </div>
+            </div>
+        </div>
+        <footer <div class="footer">
+            <div class="footer-content">
+                <div class="footer-section feeback">
+                    <a href="feedback.html" class="feedback">
+                        <center>Give Feeback </center>
+                    </a>
+                    <p>
+                        <center> Help us in serving you better</center>
+                    </p><br>
+
+
+                </div>
+                <div class="footer-section Links"></div>
+            </div>
+
+        </footer>
+        <!-- end of footer -->
+
+        <script src="script.js"></script>
+
+</body>
+
+</html>
